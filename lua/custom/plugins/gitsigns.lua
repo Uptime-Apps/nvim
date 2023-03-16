@@ -15,6 +15,7 @@ return {
             ['+'] = '₊'
         },
         current_line_blame = false,
+
         diff_opts = {
             internal = true,
             algorithm = 'minimal'
