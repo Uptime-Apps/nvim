@@ -2,11 +2,17 @@ return {
   "hrsh7th/nvim-cmp",
   dependencies = {
     "hrsh7th/cmp-emoji",
+<<<<<<< Updated upstream
     "mlaursen/vim-react-snippets",
   },
   ---@param opts cmp.ConfigSchema
   opts = function(_, opts)
     require("vim-react-snippets").lazy_load()
+=======
+  },
+  ---@param opts cmp.ConfigSchema
+  opts = function(_, opts)
+>>>>>>> Stashed changes
     local has_words_before = function()
       unpack = unpack or table.unpack
       local line, col = unpack(vim.api.nvim_win_get_cursor(0))
